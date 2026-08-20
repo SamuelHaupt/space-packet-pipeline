@@ -1,4 +1,5 @@
 # SpacePacketPipeline
+[![Build and Test](https://github.com/SamuelHaupt/space-packet-pipeline/actions/workflows/build.yaml/badge.svg?event=push)](https://github.com/SamuelHaupt/space-packet-pipeline/actions/workflows/build.yaml)
 
 ## Overview
 
