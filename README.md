@@ -42,3 +42,14 @@ cmake --build build
 ctest --test-dir build --output-on-failure -V
 ```
 
+## Jira Backlog Tickets
+
+1. jira-301
+    - project setup
+2. jira-302
+    - add test harness
+    - apid object
+    - sequence count object
+    - payload object
+    - space packet entity
+3. jira-303
