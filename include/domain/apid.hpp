@@ -11,8 +11,13 @@ public:
     /**
      * @brief Constructs an Apid from a raw value.
      * @param value The raw APID value.
+     * @throws std::domain_error if value exceeds 0x7FF.
      */
-    explicit Apid(unsigned short value) : value_(value) {}
+    explicit Apid(unsigned short value) : value_(value) {
+        if (value > 0x7FF) {
+            throw std::domain_error("Apid value exceeds 11-bit range (max 0x7FF)");
+        }
+    }
 
     /**
      * @brief Returns the underlying APID value.
